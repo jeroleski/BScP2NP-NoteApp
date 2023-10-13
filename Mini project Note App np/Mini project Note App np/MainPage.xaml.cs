@@ -6,6 +6,14 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
         InitializeComponent();
+
+		//foreach (var c in Database.Instance.Categories.Keys)
+		//{
+		//	CategoryGrid.Add(new Button()
+		//	{
+		//		Text = c
+		//	});
+		//}
 	}
 
 	private async void OnCategoryClicked(object sender, EventArgs e)

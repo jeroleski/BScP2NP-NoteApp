@@ -4,7 +4,9 @@
              x:Class="Mini_project_Note_App_np.CategoryPage">
 
     <ScrollView>
-        <VerticalStackLayout Spacing="10" Padding="30,0" VerticalOptions="Center">
+        <VerticalStackLayout 
+			x:Name ="NodeList"
+			Spacing="10" Padding="30,0" VerticalOptions="Center">
             <StackLayout Orientation="Vertical" HorizontalOptions="Start">
                 <ImageButton Source="backbutton.png"
                              Clicked="OnBackButtonClicked"
@@ -14,14 +16,6 @@
             </StackLayout>
             <Button Text="+"
                     Clicked="NewNode"/>
-            <Button Text="Navy Seals"
-                    Clicked="OpenNode"/>
-            <Button Text="Memes"
-                    Clicked="OpenNode"/>
-            <Button Text="top 5 gaming sites"
-                    Clicked="OpenNode"/>
-            <Button Text="buddy application"
-                    Clicked="OpenNode"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

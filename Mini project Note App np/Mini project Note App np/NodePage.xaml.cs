@@ -2,10 +2,11 @@
 
 public partial class NodePage : ContentPage
 {
-    public NodePage(string pageName)
+    public NodePage(string pageName, string nodeName)
     {
         InitializeComponent();
-        NodeName.Text = pageName;
+        NodeName.Text = nodeName;
+        NodeText.Text = Database.Instance.Categories[pageName].Nodes[nodeName].Text;
     }
 
     private async void OnBackButtonClicked(object sender, EventArgs e)
@@ -13,7 +14,7 @@ public partial class NodePage : ContentPage
         await Navigation.PopAsync();
     }
 
-    private async void SaveNode(object sender, EventArgs e)
+    private void SaveNode(object sender, EventArgs e)
     {
         
     }

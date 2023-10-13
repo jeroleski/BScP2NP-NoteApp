@@ -16,7 +16,7 @@
             </StackLayout>
 
             <Label x:Name="NodeName" FontSize="32" HorizontalOptions="Center" Grid.Row="1" />
-            <Label Text="This is the content text" Grid.Row="2" />
+            <Label x:Name="NodeText" Text="This is the content text" Grid.Row="2" />
 
             <ImageButton Source="deletebutton.png" Clicked="DeleteNode" HeightRequest="50" 
                         HorizontalOptions="End" VerticalOptions="End" />

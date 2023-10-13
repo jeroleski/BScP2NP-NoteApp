@@ -8,7 +8,8 @@
             <!-- Title label with margin above and below -->
             <Label Text="Notes categories" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10,0,10" />
 
-            <Grid>
+            <Grid
+                x:Name="CategoryGrid">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -24,7 +25,7 @@
                 <Button Text="School" Clicked="OnCategoryClicked" HeightRequest="100" WidthRequest="100" Margin="0,0,0,30" />
                 <Button Grid.Column="1" Text="hmm" Clicked="OnCategoryClicked" HeightRequest="100" WidthRequest="100" Margin="0,0,0,30" />
                 <Button Grid.Row="1" Text="(*_*)" Clicked="OnCategoryClicked" HeightRequest="100" WidthRequest="100" Margin="0,0,0,30" />
-                <Button Grid.Row="1" Grid.Column="1" Text="Stuff I should remember" Clicked="OnCategoryClicked" HeightRequest="100" WidthRequest="100" Margin="0,0,0,30" LineBreakMode="CharacterWrap" />
+                <Button Grid.Row="1" Grid.Column="1" Text="Stuff i should remember" Clicked="OnCategoryClicked" HeightRequest="100" WidthRequest="100" Margin="0,0,0,30" LineBreakMode="CharacterWrap" />
                 <Button Grid.Row="2" Grid.ColumnSpan="2" Text="Workouts" Clicked="OnCategoryClicked" HeightRequest="100" WidthRequest="100" Margin="0,0,0,30" />
             </Grid>
         </StackLayout>
