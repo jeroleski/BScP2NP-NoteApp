@@ -1,5 +1,9 @@
 # BScP2NP-NoteApp
 
+Implemented by:
+Jack Kryger Sørensen
+Alex Bjørnskov
+
 ## Project Description
 
 This project involves implementing a user interface design from a Figma fil. The Figma file provides a visual representation of the desired user interface and design elements. Your task is to translate this design into code, ensuring that it closely matches the Figma design. When over you are done, make sure to tell os so we can note your time.
