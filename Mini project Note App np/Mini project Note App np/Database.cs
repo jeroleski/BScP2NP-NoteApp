@@ -67,7 +67,7 @@ namespace Mini_project_Note_App_np
 
             public void NewNode(string name)
             {
-                Nodes.Add(name, new Node(name, ""));
+                Nodes.Add(name, new Node(name, "New Node"));
             }
         }
 

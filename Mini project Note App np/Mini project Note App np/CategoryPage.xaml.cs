@@ -29,10 +29,10 @@ public partial class CategoryPage : ContentPage
 
     private async void NewNode(object sender, EventArgs e)
     {
-        var button = sender as Button;
-        var node = button.Text;
+        var name = $"NewNode{new Random().Next()}";
+        Database.Instance.Categories[page].NewNode(name);
 
-        await Navigation.PushAsync(new NodePage(page, node));
+        await Navigation.PushAsync(new NodePage(page, name));
     }
 
     private async void OpenNode(object sender, EventArgs e)
