@@ -4,29 +4,24 @@
              x:Class="Mini_project_Note_App_np.CategoryPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Button Text="&lt;--"
-                    Clicked="OnBackButtonClicked" />
-
-            <Label x:Name="CategoryName"
-                   FontSize="32"
-                HorizontalOptions="Center" />
-
+        <VerticalStackLayout Spacing="10" Padding="30,0" VerticalOptions="Center">
+            <StackLayout Orientation="Vertical" HorizontalOptions="Start">
+                <ImageButton Source="backbutton.png"
+                             Clicked="OnBackButtonClicked"
+                             HeightRequest="50"
+                             Margin="0,0,0,10" /> <!-- Margin added to the bottom for spacing -->
+                <Label x:Name="CategoryName" Text="Your Title" FontSize="32" HorizontalOptions="Start" VerticalOptions="Center" />
+            </StackLayout>
             <Button Text="+"
                     Clicked="NewNode"/>
             <Button Text="Navy Seals"
-                Clicked="OpenNode"/>
+                    Clicked="OpenNode"/>
             <Button Text="Memes"
-                Clicked="OpenNode"/>
-            <Button Text="top 5 porn sites"
-                Clicked="OpenNode"/>
+                    Clicked="OpenNode"/>
+            <Button Text="top 5 gaming sites"
+                    Clicked="OpenNode"/>
             <Button Text="buddy application"
-                Clicked="OpenNode"/>
-
+                    Clicked="OpenNode"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -18,7 +18,7 @@ public partial class CategoryPage : ContentPage
         var button = sender as Button;
         var page = button.Text;
 
-        await Navigation.PushAsync(new CategoryPage(page));
+        await Navigation.PushAsync(new NodePage(page));
     }
 
     private async void OpenNode(object sender, EventArgs e)
@@ -26,7 +26,7 @@ public partial class CategoryPage : ContentPage
         var button = sender as Button;
         var page = button.Text;
 
-        await Navigation.PushAsync(new CategoryPage(page));
+        await Navigation.PushAsync(new NodePage(page));
     }
 }
 
