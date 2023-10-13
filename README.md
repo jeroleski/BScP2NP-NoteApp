@@ -1,7 +1,9 @@
 # BScP2NP-NoteApp
 
 Implemented by:
+
 Jack Kryger Sørensen
+
 Alex Bjørnskov
 
 ## Project Description
