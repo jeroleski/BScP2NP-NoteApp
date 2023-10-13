@@ -2,23 +2,19 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
 	public MainPage()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private async void OnCategoryClicked(object sender, EventArgs e)
 	{
-		count++;
+        var button = sender as Button;
+		var page = button.Text;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+		await Navigation.PushAsync(new CategoryPage(page));
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    }
 }
 
